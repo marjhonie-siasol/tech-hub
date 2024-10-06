@@ -1,6 +1,9 @@
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const typingText = document.getElementById('typing-text');
+const dynamicDiv = document.getElementById('dynamic-div');
+const headerHeight = document.querySelector('header').offsetHeight;
+
 const textArray = [
     "EXPLORE THE LATEST TECHNOLOGY OF TODAY'S WORLD",
     "JOIN THE FUTURE OF INNOVATION",
@@ -63,4 +66,12 @@ adjustSpeed();
 // Menu toggle for mobile view
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+});
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > headerHeight) {
+        dynamicDiv.classList.add('sticky');
+    } else {
+        dynamicDiv.classList.remove('sticky');
+    }
 });
