@@ -1,0 +1,81 @@
+.background-animate {
+   background: linear-gradient(270deg, #4a90e2, #9013fe, #f7c94b, #e94e77);
+   background-size: 400%;
+   animation: AnimationName 10s ease infinite;
+   }
+
+@keyframes AnimationName {
+   0%, 100% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+}
+
+/* Add scale effect on hover for images */
+img {
+   transition: transform 0.3s ease-in-out;
+}
+
+/* Ensures the image scales up on hover */
+.group-hover img {
+   transform: scale(1.1);
+}
+
+/* Typing effect styles */
+.typing {
+   border-right: 2px solid white;
+   white-space: nowrap;
+   overflow: hidden;
+   width: 0;
+   animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+   from { width: 0; }
+   to { width: 100%; }
+}
+
+@keyframes blink-caret {
+   50% { border-color: transparent; }
+}
+
+@keyframes fadeInUp {
+   from {
+       opacity: 0;
+       transform: translateY(20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+.group-hover .animate-fadeInUp {
+   animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Styling for fade-in effect */
+.group-hover .absolute {
+   transition: opacity 0.5s ease;
+}
+
+/* Ensure image transitions on group hover */
+.group:hover img {
+   transform: scale(1.1);
+}
+
+.scrollbar-hide {
+   overflow-x: auto; /* Enables scrolling */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+   display: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+   scrollbar-width: none; /* Hides the scrollbar */
+}
+

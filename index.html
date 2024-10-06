@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hub Blog</title>
+    <link rel="icon" href="https://static-00.iconduck.com/assets.00/html5-icon-2018x2048-st7q7lm6.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+    <header class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">
+                <span class="text-white">Tech</span><span class="text-yellow-400">HUB</span>
+            </h1>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav class="hidden md:flex md:items-center text-lg">
+                <ul class="flex space-x-12">
+                    <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">About</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Support</a></li>
+                </ul>
+            </nav>
+        </div>  
+        <div id="mobile-menu" class="hidden md:hidden mt-2 px-5">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="#" class="block py-2 hover:text-yellow-400">Home</a></li>
+                <li><a href="#" class="block py-2 hover:text-yellow-400">About</a></li>
+                <li><a href="#" class="block py-2 hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>  
+    </header>
+    
+    <main>
+        <section class="background-animate h-28 md:h-40 flex items-center justify-center text-center text-white">
+            <h2 id="typing-text" class="font-bold text-2xl md:text-7xl"></h2>
+        </section>
+
+        <!-- create a navbar here that has Latest Trends News Reviews Guides Products Interviews Events Careers Startups Opinion Videos  -->
+        <nav class="bg-gray-200 text-black py-4 overflow-x-auto scrollbar-hide flex justify-between items-center">
+            <div class="max-w-7xl mx-auto px-5">
+                <ul class="flex space-x-4 md:space-x-8 text-sm md:text-lg">
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Latest</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Trends</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">News</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Reviews</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Guides</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Products</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Interviews</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Events</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Careers</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Startups</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Opinion</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Videos</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="p-5 md:p-0 mt-0 md:mt-5 max-w-7xl mx-auto">
+        
+            <div class="grid grid-cols-12 grid-rows-8 gap-2">
+                <div class="relative col-span-12 sm:col-span-6 row-span-6 group overflow-hidden">
+                    <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <span class="text-center text-white text-2xl md:text-3xl font-medium animate-fadeInUp" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);">OpenAI's ChatGPT: A New Era of AI</span>
+                    </div>
+                </div>
+                <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 group overflow-hidden">
+                    <img src="https://cdn.s.kittl.com/pr:sharp/rs:fit:1440:1440:0/plain/api/templates/Tech-Blog-YouTube-Thumbnail-Design-Thumbnail-Design-Template-clpo5pdw91zie1i1xgeokb7ct.png@webp" alt="Tech Blog" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <span class="text-center text-white text-2xl md:text-2xl font-medium animate-fadeInUp" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);">10 Technologies might influence the future</span>
+                    </div>
+                </div>
+                <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 sm:row-start-4 group overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <span class="text-center text-white text-2xl md:text-2xl font-medium animate-fadeInUp" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);">The Art and Science of Data Analysis</span>
+                    </div>
+                </div>
+                <div class="relative col-span-12 sm:col-span-3 row-span-6 sm:col-start-10 sm:row-start-1 group overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Technology Landscape" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <span class="text-center text-white text-2xl md:text-3xl font-medium animate-fadeInUp" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);">VR's potential that possible to create new world</span>
+                    </div>
+                </div>
+                <div class="relative col-span-12 row-span-3 group overflow-hidden">
+                    <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <span class="text-center text-white text-2xl md:text-5xl font-medium animate-fadeInUp" style="text-shadow: 2px 2px 4px rgb(0, 0, 0);">Gadgets arise with newest technology capabilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5 md:p-0 mt-0 md:mt-5 max-w-7xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 mt-28">Newest Updates</h2>
+        
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/HUOIPECNZ5KVPNDUTSMQI5XZRA.jpg?auth=1d71d9da4cdb5e93883995e6bf60efb14bf69738a13fb20f6c0efecca0256038&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/J7OQXP7F3RJJHK2IZV3SMZZ3PE.jpg?auth=3cecc5fbb396ed7e957029015145fd57b5c06502498d4d52f875db0b8626ccb9&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Google tests verified check marks in search results</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=304%2C171&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FOlaf-Scholz-IBM.jpg&signature=f45f2c9c7deccb1d5e0b80694c2f0b73" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Algorithms are key to quantum utility’: IBM opens first European quantum data centre</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/OV7F7P5OBJIXJPLNPGW7RSGYGI.jpg?auth=e3b3c776a890a6b4ba70f20bc722e69ab5425c4322c7ac9e136a541dbe0fe88b&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Exclusive: Conservative think tank targeting NASA employees' communications about Musk, Trump</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=304%2C171&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F10%2FUntitled-design-3.jpg&signature=7683f964ee3e32612b307dd6e499271e" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">AI startup Poolside raises $500M as AI coding market booms</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/YPE6ACEGARNIHKKDRUP47IOJHI.jpg?auth=b397a39a79c629bfb428ce15eb861f7f16970ee57557de35898c4dbeccd5634b&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Ubisoft shares set for biggest one-day jump on record after takeover report</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/5LXO664U6VKHFLOGTSLURJIWOQ.jpg?auth=2169ba33a2feee9510514e94ac6e60fcf832b2ceed74f86d02be10ee83f90cd9&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Irish privacy regulator probes Ryanair's use of facial recognition</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/GMWQBMQS4NKNHIGJ4YVIG3JISU.jpg?auth=3eea9a1d14b99e5aca0c256c5c1456d04b8c4dc954aef447dde1fd9d7de64efc&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">News</p>
+                        <p class="mt-2 text-1xl font-bold text-black">UK investment summit to feature Google, Wayve and Brookfield</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2023%2F08%2FARM-chip-IPO.jpg&signature=f2954dc08475d12f1986c8da4dfb886b" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F09%2FDALL%C2%B7E-2024-09-25-16.49.45-A-real-life-photography-style-image-of-a-modern-data-center.-The-room-is-filled-with-rows-of-sleek-tall-server-racks-with-blinking-LED-lights-on-the--e1727275993329.jpeg&signature=a17d447daa7be5bb3f36f03438b1f939" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F09%2FIQM--e1726496618384.jpg&signature=7b3f81b5eb7142fc2619560cc72db803" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F09%2FUntitled-design-6.jpg&signature=382dc4a08244044136bb0c36b78fd690" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F06%2FUntitled-design-76.jpg&signature=a8f9bbb99d25ee1c39d045966d8d024a" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://img-cdn.tnwcdn.com/image?fit=220%2C125&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2024%2F09%2FQuantum-Accelerator-e1725525048150.jpg&signature=5e800bf1cd5b358afa0d0e11a731b690" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Brazil's top court says X paid pending fines to wrong bank</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/7UBE5Z5NDZICVEPPYWXIRA67FA.jpg?auth=848c93bfaab0c7a48201f56056b8c8441fbefd051179af5dfaca2d507a12fdeb&width=960&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Foxconn beats estimates with record third-quarter revenue on AI demand</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative col-span-1 group overflow-hidden">
+                        <img src="https://www.reuters.com/resizer/v2/Y5S7INK7XBIJPA2WLCDWNXURTE.jpg?auth=88dd02531be6bde349a9574d2dacec58e71ff43fd5f08cdb7a5ce4c21fffc1a2&width=480&quality=80" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <p class="mt-2 text-1xl font-semibold text-gray-400">Latest</p>
+                        <p class="mt-2 text-1xl font-bold text-black">Meta, challenging OpenAI, announces new AI model that can generate video with sound</p>
+                        <p class="mt-2 text-sm text-gray-400">October 05, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex justify-center items-center mt-10 mb-10"> 
+            <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-2 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-sm md:text-lg px-4 py-2 text-center">See all latest</button>
+        </div>
+
+    
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-5">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <!-- Logo -->
+            <div class="mb-6 md:mb-0">
+                <h1 class="text-3xl font-bold">
+                    <span class="text-yellow-400">Tech</span><span class="text-white">HUB</span>
+                </h1>
+                <p class="mt-2 text-gray-400">Your go-to source for tech news and updates.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="grid grid-cols-3 gap-0 mb-6 md:mb-0">
+                <div>
+                    <h2 class="text-yellow-400 font-semibold text-lg">Heading</h2>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">About</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-yellow-400 font-semibold text-lg">Categories</h2>
+                    <div class="grid grid-cols-3 gap-20 mt-2">
+                        <ul class="space-y-1">
+                            <li><a href="#" class="hover:text-yellow-400">Latest</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Trends</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">News</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Reviews</a></li>
+                        </ul>
+                        <ul class="space-y-1">
+                            <li><a href="#" class="hover:text-yellow-400">Guides</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Products</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Interviews</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Events</a></li>
+                        </ul>
+                        <ul class="space-y-1">
+                            <li><a href="#" class="hover:text-yellow-400">Careers</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Startups</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Opinion</a></li>
+                            <li><a href="#" class="hover:text-yellow-400">Videos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter Subscription -->
+            <div>
+                <h2 class="font-semibold text-lg">Subscribe to Our Newsletter</h2>
+                <p class="mt-2 text-gray-400">Get the latest updates right in your inbox.</p>
+                <form class="mt-4">
+                    <input type="email" class="p-2 w-full rounded-md text-gray-800" placeholder="Enter your email" required>
+                    <button type="submit" class="mt-2 bg-yellow-400 text-gray-800 p-2 rounded-md hover:bg-yellow-300">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-4 text-center">
+            <p class="text-sm text-gray-400">© 2024 Tech Hub Blog. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition" aria-label="Twitter">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Twitter" class="w-6 h-6">
+                </a>
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition" aria-label="Instagram">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png" alt="Instagram" class="w-6 h-6">
+                </a>
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition" aria-label="LinkedIn">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968958.png" alt="LinkedIn" class="w-6 h-6">
+                </a>
+                <a href="#" class="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition" aria-label="YouTube">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="YouTube" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+          
+    <script src="function.js"></script>
+
+</body>
+</html>
