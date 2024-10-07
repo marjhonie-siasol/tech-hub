@@ -78,8 +78,3 @@ img {
 .scrollbar-hide {
     scrollbar-width: none; /* Hides the scrollbar */
 }
-
-.sticky {
-   position: sticky;
-   top: 72px;
-}
