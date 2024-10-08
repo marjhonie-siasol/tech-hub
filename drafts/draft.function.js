@@ -47,6 +47,11 @@ window.addEventListener('click', function (e) {
     }
 });
 
+// Prevent dropdown from closing when clicking inside the menu (mobile-specific issue fix)
+moreDropdownMenu.addEventListener('click', function (e) {
+    e.stopPropagation(); // Stop event from propagating to window and accidentally closing the dropdown
+});
+
 // Typing Animation
 function type() {
     if (pauseAfterTyping) {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHUB</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/16995/16995058.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <style>
+        .background-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800 ">
+    <div class="background-section max-w-8xl mx-auto p-5 text-center py-14 bg-black">
+        <h1 class="text-5xl md:text-9xl font-bold tracking-widest text-transparent bg-clip-text background-text-animate"> 
+            L<span class="ml-5 md:ml-44">A</span><span class="ml-5 md:ml-44">T</span><span class="ml-5 md:ml-44">E</span><span class="ml-5 md:ml-44">S</span><span class="ml-5 md:ml-44">T</span>
+        </h1>
+    </div>
+    
+    <div class="flex flex-col h-screen">
+        <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
+            <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    <span class="text-white">Tech</span><span class="text-yellow-400">HUB</span>
+                </h1>
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <nav class="hidden md:flex md:items-center text-lg relative">
+                    <ul class="flex space-x-12">
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Latest</a></li>
+                        <li><a href="trends.html" class="hover:text-yellow-400 whitespace-nowrap">Trends</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">News</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Reviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Guides</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Products</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Interviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Events</a></li>
+                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Career</a></li>
+                        <li class="relative group">
+                            <a href="#" class="more-dropdown-toggle hover:text-yellow-400 whitespace-nowrap">More</a>
+                            <ul class="absolute left-0 hidden mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg more-dropdown-menu">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+
+        <div class="flex flex-1 overflow-hidden">
+            <main class="flex-1 p-48 overflow-y-auto order-1 scrollbar-hide">
+                <div class="grid grid-cols-12 grid-rows-8 gap-2">
+                    <div class="relative col-span-12 sm:col-span-6 row-span-6 group overflow-hidden">
+                        <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-6xl text-3xl p-2 py-10">
+                            The Power of ChatGPT for the AI future
+                        </a>
+                    </div>
+                    
+                    <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 group overflow-hidden">
+                        <img src="https://cdn.s.kittl.com/pr:sharp/rs:fit:1440:1440:0/plain/api/templates/Tech-Blog-YouTube-Thumbnail-Design-Thumbnail-Design-Template-clpo5pdw91zie1i1xgeokb7ct.png@webp" alt="Tech Blog" class="w-full h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-4xl text-3xl p-2 py-5">
+                            10 Technologies might influence the future
+                        </a>
+                    </div>
+                    <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 sm:row-start-4 group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-4xl text-3xl p-2 py-5">
+                            The Art and Science of Data Analysis
+                        </a>
+                    </div>
+                    <div class="relative col-span-12 sm:col-span-3 row-span-6 sm:col-start-10 sm:row-start-1 group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Technology Landscape" class="w-full h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-6xl text-6xl p-2 py-5">
+                            VR's potential that possible to create new world
+                        </a>
+                    </div>
+                    <div class="relative col-span-12 row-span-3 group overflow-hidden">
+                        <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-8xl text-2xl p-2 py-5">
+                            Gadgets arise with newest technology capabilities
+                        </a>
+                    </div>
+                </div>
+            </main>
+            <aside class="w-48 bg-gray-200 p-4 overflow-y-auto order-2">
+                <h2>Explore more here</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <!-- More links -->
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

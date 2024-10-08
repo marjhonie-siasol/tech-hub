@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHUB</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/16995/16995058.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800 ">
+    <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">
+                <span class="text-white">Tech</span><span class="text-yellow-400">HUB</span>
+            </h1>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav class="hidden md:flex md:items-center text-lg relative">
+                <ul class="flex space-x-12">
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Latest</a></li>
+                    <li><a href="trends.html" class="hover:text-yellow-400 whitespace-nowrap">Trends</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">News</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Reviews</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Guides</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Products</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Interviews</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Events</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Career</a></li>
+                    <li class="relative group">
+                        <a href="#" class="more-dropdown-toggle hover:text-yellow-400 whitespace-nowrap">More</a>
+                        <ul class="absolute left-0 hidden mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg more-dropdown-menu">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+        <div id="mobile-menu" class="hidden md:hidden mt-2 px-5">
+         <ul class="flex flex-col space-y-2">
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Latest</a></li>
+            <li><a href="trends.html" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Trends</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">News</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Reviews</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Guides</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Products</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Interviews</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Events</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Careers</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
+            <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
+         </ul>
+     </div>
+    
+    </header>
+    
+    <main >
+
+      <!-- this part will serve as like a background dont remove it-->
+      <div class="max-w-8xl mx-auto p-5 text-center mt-16 py-14 bg-black">
+         <h1 class="text-5xl md:text-9xl font-bold tracking-widest text-transparent bg-clip-text background-text-animate"> 
+             L<span class="ml-5 md:ml-44">A</span><span class="ml-5 md:ml-44">T</span><span class="ml-5 md:ml-44">E</span><span class="ml-5 md:ml-44">S</span><span class="ml-5 md:ml-44">T</span>
+         </h1>
+       </div>
+
+         <!-- put the what i mean on it here. -->
+
+      
+  </main>
+  
+
+    <script src="function.js"></script>
+</body>
+</html>

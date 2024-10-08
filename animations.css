@@ -13,6 +13,21 @@
    }
 }
 
+.background-text-animate {
+   background: linear-gradient(270deg, #4a90e2, #9013fe, #f7c94b, #e94e77);
+   background-size: 400%;
+   animation: AnimationName 10s ease infinite;
+   -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+}
+
+@keyframes AnimationName {
+   0% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+   100% { background-position: 0% 50%; }
+}
+
 /* Add scale effect on hover for images */
 img {
    transition: transform 0.3s ease-in-out;
