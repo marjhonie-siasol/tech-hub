@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHUB</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/16995/16995058.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <style>
+        .background-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        /* Hide scrollbar for non-IE browsers */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;  /* Chrome, Safari, Opera */
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-100 text-gray-800">
+    <div class="background-section w-full text-center py-14 bg-black">
+        <h1 class="text-5xl md:text-9xl font-bold tracking-widest text-transparent bg-clip-text background-text-animate"> 
+            L<span class="ml-2 md:ml-16">A</span><span class="ml-2 md:ml-16">T</span><span class="ml-2 md:ml-16">E</span><span class="ml-2 md:ml-16">S</span><span class="ml-2 md:ml-16">T</span>
+        </h1>
+    </div>
+    
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
+            <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    <span class="text-white">Tech</span><span class="text-yellow-400">HUB</span>
+                </h1>
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <nav id="menu" class="hidden md:flex md:items-center text-lg">
+                    <ul class="flex space-x-6 md:space-x-12">
+                        <li><a href="#" class="hover:text-yellow-400">Latest</a></li>
+                        <li><a href="trends.html" class="hover:text-yellow-400">Trends</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">News</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Reviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Guides</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Products</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Interviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Events</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Career</a></li>
+                        <li class="relative group">
+                            <a href="#" class="hover:text-yellow-400">More</a>
+                            <ul class="absolute left-0 hidden mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg group-hover:block">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+
+        <div class="flex-1 flex flex-col md:flex-row mt-16">
+            <main class="flex-1 p-4 md:p-12 overflow-y-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                    <div class="relative col-span-12 md:col-span-6 group overflow-hidden">
+                        <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-64 md:h-full object-cover transition-transform duration-300">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50 text-2xl md:text-4xl p-4">
+                            The Power of ChatGPT for the AI future
+                        </a>
+                    </div>
+                    
+                    <div class="relative col-span-12 md:col-span-3 group overflow-hidden">
+                        <img src="https://cdn.s.kittl.com/pr:sharp/rs:fit:1440:1440:0/plain/api/templates/Tech-Blog-YouTube-Thumbnail-Design-Thumbnail-Design-Template-clpo5pdw91zie1i1xgeokb7ct.png@webp" alt="Tech Blog" class="w-full h-64 md:h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50 text-xl md:text-3xl p-2">
+                            10 Technologies might influence the future
+                        </a>
+                    </div>
+                    
+                    <div class="relative col-span-12 md:col-span-3 group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-64 md:h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50 text-xl md:text-3xl p-2">
+                            The Art and Science of Data Analysis
+                        </a>
+                    </div>
+                    
+                    <div class="relative col-span-12 md:col-span-3 group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Technology Landscape" class="w-full h-64 md:h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50 text-2xl md:text-4xl p-2">
+                            VR's potential that possible to create new world
+                        </a>
+                    </div>
+
+                    <div class="relative col-span-12 group overflow-hidden">
+                        <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-64 md:h-full object-cover">
+                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50 text-xl md:text-4xl p-4">
+                            Gadgets arise with newest technology capabilities
+                        </a>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="p-4 mt-4 md:mt-0 md:w-80">
+                <h2 class="font-bold text-xl md:text-2xl">Explore more here</h2>
+                <ul class="list-disc list-inside">
+                    <li><a href="#">The electric vehicle market is expected to boom in 2024</a></li>
+                    <li><a href="#">Augmented reality now used in construction industries</a></li>
+                    <li><a href="#">Guide for how to code fast in Python</a></li>
+                </ul>
+            </aside>
+        </div>
+        
+        <footer class="bg-gray-800 text-white py-4 text-center text-xs">
+            <p>Copyright 2024 TechHUB. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

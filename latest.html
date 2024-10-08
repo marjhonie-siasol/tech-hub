@@ -8,23 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="animations.css">
-    <style>
-        .background-section {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-        }
-    </style>
 </head>
 <body class="font-poppins bg-gray-100 text-gray-800 ">
-    <div class="background-section max-w-8xl mx-auto p-5 text-center py-14 bg-black">
+    <div class="fixed top-0 left-0 w-full z-[-1] text-center py-20 bg-black">
         <h1 class="text-5xl md:text-9xl font-bold tracking-widest text-transparent bg-clip-text background-text-animate"> 
             L<span class="ml-5 md:ml-44">A</span><span class="ml-5 md:ml-44">T</span><span class="ml-5 md:ml-44">E</span><span class="ml-5 md:ml-44">S</span><span class="ml-5 md:ml-44">T</span>
         </h1>
     </div>
     
+    
+
     <div class="flex flex-col h-screen">
         <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
             <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
@@ -60,48 +53,35 @@
             </div>  
         </header>
 
+        <div class="overflow-hidden flex-1 flex flex-col md:flex-row">
 
-        <div class="flex flex-1 overflow-hidden">
-            <main class="flex-1 p-48 overflow-y-auto order-1 scrollbar-hide">
-                <div class="grid grid-cols-12 grid-rows-8 gap-2">
-                    <div class="relative col-span-12 sm:col-span-6 row-span-6 group overflow-hidden">
+            <main class="flex-1 p-32 overflow-y-auto order-1 scrollbar-hide mt-20">
+            <div class="p-5 md:p-0 mt-0 md:mt-5 max-w-7xl mx-auto">
+                <div class="grid grid-cols-12 grid-rows-10 gap-2">
+
+                    <div class="relative col-span-12 row-span-7 group overflow-hidden">
                         <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
-                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-6xl text-3xl p-2 py-10">
-                            The Power of ChatGPT for the AI future
-                        </a>
                     </div>
                     
-                    <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 group overflow-hidden">
-                        <img src="https://cdn.s.kittl.com/pr:sharp/rs:fit:1440:1440:0/plain/api/templates/Tech-Blog-YouTube-Thumbnail-Design-Thumbnail-Design-Template-clpo5pdw91zie1i1xgeokb7ct.png@webp" alt="Tech Blog" class="w-full h-full object-cover">
-                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-4xl text-3xl p-2 py-5">
-                            10 Technologies might influence the future
-                        </a>
+                    <div class="relative col-span-8 row-span-3 row-start-8 group overflow-hidden">
+                        <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover transition-transform duration-300">
                     </div>
-                    <div class="relative col-span-12 sm:col-span-3 row-span-3 sm:col-start-7 sm:row-start-4 group overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover">
-                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-4xl text-3xl p-2 py-5">
-                            The Art and Science of Data Analysis
-                        </a>
-                    </div>
-                    <div class="relative col-span-12 sm:col-span-3 row-span-6 sm:col-start-10 sm:row-start-1 group overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Technology Landscape" class="w-full h-full object-cover">
-                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-6xl text-6xl p-2 py-5">
-                            VR's potential that possible to create new world
-                        </a>
-                    </div>
-                    <div class="relative col-span-12 row-span-3 group overflow-hidden">
-                        <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover">
-                        <a href="https://yourlink.com" class="absolute bottom-0 text-white bg-black bg-opacity-50  md:text-8xl text-2xl p-2 py-5">
-                            Gadgets arise with newest technology capabilities
-                        </a>
+                
+                    <div class="relative col-span-4 row-span-3 col-start-9 row-start-8 group overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover transition-transform duration-300">                
                     </div>
                 </div>
+                
+        </div>
+    
+    
             </main>
-            <aside class="w-48 bg-gray-200 p-4 overflow-y-auto order-2">
-                <h2>Explore more here</h2>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <!-- More links -->
+            <aside class="w-80 overflow-y-auto order-2 mt-72 mr-32">
+                <h2 class="font-bold text-3xl mb-10 underline">Explore more here</h2>
+                <ul class="space-y-5">
+                    <li><a href="#" class="font-bold hover:text-yellow-400">Apple Vision Pro is set to revolutionize immersive experiences with its mixed-reality headset in 2024</a></li>
+                    <li><a href="#" class="font-bold hover:text-yellow-400">Foldable phones, like Samsung's Galaxy Z Fold 6, are gaining popularity as they become thinner and more accessible</a></li>
+                    <li><a href="#" class="font-bold hover:text-yellow-400">AI is advancing towards systems that exhibit "common sense," which is crucial for achieving true machine intelligence</a></li>
                 </ul>
             </aside>
         </div>
