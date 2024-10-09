@@ -9,37 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="animations.css">
 </head>
-<body class="font-poppins text-gray-800 ">
+<body class="font-poppins bg-gray-100 text-gray-800">
     <div class="fixed top-0 left-0 w-full z-[-1] text-center py-20 bg-black">
         <h1 class="text-5xl md:text-9xl font-bold tracking-widest text-transparent bg-clip-text background-text-animate"> 
             L<span class="ml-5 md:ml-44">A</span><span class="ml-5 md:ml-44">T</span><span class="ml-5 md:ml-44">E</span><span class="ml-5 md:ml-44">S</span><span class="ml-5 md:ml-44">T</span>
         </h1>
     </div>
 
-
     <div class="flex flex-col h-screen">
-        <!-- <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
-            <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
-                <h1 class="text-2xl md:text-3xl font-bold">
-                    <span class="text-white">Tech</span><span class="text-yellow-400">HUB</span>
-                </h1>
-                <button id="menu-toggle" class="md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-                <nav class="hidden md:flex md:items-center text-lg relative">
-                    <ul class="flex space-x-12">
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Latest</a></li>
-                        <li><a href="trends.html" class="hover:text-yellow-400 whitespace-nowrap">Trends</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">News</a></li>
-                        
-                        </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>  
-        </header> -->
         <header class="bg-gray-800 text-white fixed top-0 left-0 w-full z-50 shadow-xl">
             <div class="max-w-7xl mx-auto p-5 flex justify-between items-center">
                 <h1 class="text-2xl md:text-3xl font-bold">
@@ -52,18 +29,18 @@
                 </button>
                 <nav class="hidden md:flex md:items-center text-lg relative">
                     <ul class="flex space-x-12">
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Latest</a></li>
-                        <li><a href="trends.html" class="hover:text-yellow-400 whitespace-nowrap">Trends</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">News</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Reviews</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Guides</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Products</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Interviews</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Events</a></li>
-                        <li><a href="#" class="hover:text-yellow-400 whitespace-nowrap">Career</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Latest</a></li>
+                        <li><a href="trends.html" class="hover:text-yellow-400">Trends</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">News</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Reviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Guides</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Products</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Interviews</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Events</a></li>
+                        <li><a href="#" class="hover:text-yellow-400">Career</a></li>
                         <li class="relative group">
-                            <a href="#" class="more-dropdown-toggle hover:text-yellow-400 whitespace-nowrap">More</a>
-                            <ul class="absolute left-0 hidden mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg more-dropdown-menu">
+                            <a href="#" class="hover:text-yellow-400">More</a>
+                            <ul class="absolute left-0 hidden mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg group-hover:block">
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
@@ -71,49 +48,75 @@
                         </li>
                     </ul>
                 </nav>
-            </div>  
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-2 px-5">
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Latest</a></li>
+                    <li><a href="trends.html" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Trends</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">News</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Reviews</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Guides</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Products</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Interviews</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Events</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Careers</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Startups</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Opinion</a></li>
+                    <li><a href="#" class="block py-1 hover:bg-gray-700 hover:text-yellow-400">Videos</a></li>
+                </ul>
+            </div>
         </header>
 
         <div class="overflow-hidden flex-1 flex flex-col md:flex-row justify-center">
-
             <main class="flex-grow w-full overflow-y-auto order-1 scrollbar-hide ml-36 p-28">
                 <div class="mt-28">
                     <div class="grid grid-cols-12 grid-rows-10 gap-2">
                         <div class="relative col-span-12 row-span-7 group overflow-hidden">
                             <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
                         </div>
-                        
                         <div class="relative col-span-8 row-span-3 row-start-8 group overflow-hidden">
                             <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover transition-transform duration-300">
                         </div>
-                    
                         <div class="relative col-span-4 row-span-3 col-start-9 row-start-8 group overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover transition-transform duration-300">                
                         </div>
                     </div>
+                </div>
+                <div class="mt-28">
                     <div class="grid grid-cols-12 grid-rows-10 gap-2">
                         <div class="relative col-span-12 row-span-7 group overflow-hidden">
                             <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
                         </div>
-                        
                         <div class="relative col-span-8 row-span-3 row-start-8 group overflow-hidden">
                             <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover transition-transform duration-300">
                         </div>
-                    
                         <div class="relative col-span-4 row-span-3 col-start-9 row-start-8 group overflow-hidden">
                             <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover transition-transform duration-300">                
                         </div>
                     </div>
-                    
                 </div>
-                
+                <div class="mt-28">
+                    <div class="grid grid-cols-12 grid-rows-10 gap-2">
+                        <div class="relative col-span-12 row-span-7 group overflow-hidden">
+                            <img src="https://legaldata.law/wp-content/uploads/2023/10/ChatGPT.jpg" alt="Tech Companies" class="w-full h-full object-cover transition-transform duration-300">
+                        </div>
+                        <div class="relative col-span-8 row-span-3 row-start-8 group overflow-hidden">
+                            <img src="https://blog.tmetric.com/content/images/2023/05/Dribble-design-website--1--1.png" alt="Web Design" class="w-full h-full object-cover transition-transform duration-300">
+                        </div>
+                        <div class="relative col-span-4 row-span-3 col-start-9 row-start-8 group overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaCUyMG5ld3N8ZW58MHx8MHx8fDA%3D" alt="Tech News" class="w-full h-full object-cover transition-transform duration-300">                
+                        </div>
+                    </div>
+                </div>
             </main>
 
             <aside class="w-4/12 order-2 mt-72 px-12 mr-48">
                 <h2 class="font-bold text-3xl mb-5 underline">Explore more here</h2>
-                
                 <div class="overflow-y-auto h-5/6 scrollbar-hide">
                     <ul class="space-y-5">
+                        <li><a href="#" class="font-bold hover:text-yellow-400">Apple Vision Pro is set to revolutionize immersive experiences with its mixed-reality headset in 2024</a></li>
+                        <li><a href="#" class="font-bold hover:text-yellow-400">Foldable phones, like Samsung's Galaxy Z Fold 6, are gaining popularity as they become thinner and more accessible</a></li>
+                        <li><a href="#" class="font-bold hover:text-yellow-400">AI is advancing towards systems that exhibit "common sense," which is crucial for achieving true machine intelligence</a></li>
                         <li><a href="#" class="font-bold hover:text-yellow-400">Apple Vision Pro is set to revolutionize immersive experiences with its mixed-reality headset in 2024</a></li>
                         <li><a href="#" class="font-bold hover:text-yellow-400">Foldable phones, like Samsung's Galaxy Z Fold 6, are gaining popularity as they become thinner and more accessible</a></li>
                         <li><a href="#" class="font-bold hover:text-yellow-400">AI is advancing towards systems that exhibit "common sense," which is crucial for achieving true machine intelligence</a></li>
@@ -126,8 +129,27 @@
                     </ul>
                 </div>
             </aside>
-            
         </div>
     </div>
+
+    <footer class="bg-gray-800 text-white py-6 mt-auto">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="mb-2">© 2024 TechHUB. All rights reserved.</p>
+            <p>Follow us on:
+                <a href="#" class="hover:text-yellow-400"> Facebook</a>,
+                <a href="#" class="hover:text-yellow-400"> Twitter</a>,
+                <a href="#" class="hover:text-yellow-400"> Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
