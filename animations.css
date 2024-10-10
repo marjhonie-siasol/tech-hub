@@ -93,3 +93,7 @@ img {
 .scrollbar-hide {
     scrollbar-width: none; /* Hides the scrollbar */
 }
+.scroll-independent {
+   overflow-y: auto;
+   height: 100vh; /* Full viewport height */
+ }
