@@ -14,6 +14,22 @@
    100% { background-position: 0% 50%; }
 }
 
+.background-animate {
+   background: linear-gradient(270deg, #4a90e2, #9013fe, #f7c94b, #e94e77);
+   background-size: 400%;
+   animation: AnimationName 10s ease infinite;
+   }
+
+@keyframes AnimationName {
+   0%, 100% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+}
+
+
 /* Add scale effect on hover for images */
 img {
    transition: transform 0.3s ease-in-out;
@@ -83,3 +99,21 @@ img {
    overflow-y: auto;
    height: 100vh; /* Full viewport height */
  }
+
+ @media (max-width: 767px) {
+   section.h-screen {
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   aside {
+       order: -1; /* Move it to the top */
+       margin-top: 1rem; /* Optional: Add some spacing */
+   }
+
+   aside h2 {
+       margin-top: 0;
+       text-align: center; /* Center the heading for mobile view */
+   }
+}
+

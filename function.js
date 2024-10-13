@@ -1,5 +1,7 @@
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const exploreToggle = document.getElementById('explore-toggle');
+const exploreMenu = document.getElementById('explore-menu'); // New menu for Explore
 const typingText = document.getElementById('typing-text');
 const textArray = [
     "EXPLORE THE LATEST TECHNOLOGY OF TODAY'S WORLD",
@@ -20,10 +22,18 @@ menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
-// Prevent click outside mobile menu from closing it
+// Explore toggle for mobile
+exploreToggle.addEventListener('click', () => {
+    exploreMenu.classList.toggle('hidden');
+});
+
+// Prevent click outside mobile menu and explore menu from closing them
 window.addEventListener('click', function (e) {
     if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
         mobileMenu.classList.add('hidden'); // Hide the mobile menu if clicked outside
+    }
+    if (!exploreToggle.contains(e.target) && !exploreMenu.contains(e.target)) {
+        exploreMenu.classList.add('hidden'); // Hide the explore menu if clicked outside
     }
 });
 
